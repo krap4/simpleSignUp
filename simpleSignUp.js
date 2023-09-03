@@ -159,6 +159,7 @@ const sendNumber = () => {
     const token = String(Math.floor(Math.random() * 1000000)).padStart(6, "0")
     document.getElementById('token').innerHTML = token
     document.getElementById('token').style.color = '#0068FF';
+    isNumberDone = false;
 
 };
 
@@ -172,12 +173,16 @@ const checkNumber = () => {
 
     if (tokenColor !== 'rgb(0, 104, 255)') {
         doneButton.disabled = true;
+        clearInterval(timer);
+        isNumberDone = false
+        doneButton.classList.remove('done')
     }
 
     else {
         doneButton.disabled = false;
-    
+        isStarted = false;
 }
+    joinDone()
 };
 
 let isStarted = false;
