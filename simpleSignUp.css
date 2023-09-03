@@ -8,6 +8,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    zoom: 0.75;
     
 }
 
