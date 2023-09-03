@@ -1,0 +1,252 @@
+body {
+    max-width: 1920px;
+    max-height: 1196px;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.wrapper {
+    width:  548px;
+    height: 960px;
+    border-radius: 20px;
+    border: 1px solid #AACDFF;
+    box-shadow: 7px 7px 39px 0px rgba(0, 104, 255, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+h3 {
+    width: 380px;
+    height: 47px;
+    font-size: 32px;
+    color: #0068FF;
+    margin: 60px 82px 60px 78px;
+}
+
+.inputBox {
+    width: 380px;
+    height: 60px;
+    border: 1px solid #D2D2D2;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    margin-left: 78px;
+    margin-right: 82px;
+    font-size: 16px;
+    padding-left: 14px;
+}
+
+.inputBox::placeholder {
+    font-size: 16px;
+    color: #797979;
+    padding: 18px 102px 18px 0px;
+}
+
+.inputBox.error {
+    border-color: red !important;
+    outline: none;
+}
+
+.inputBox:focus {
+    border-color: #0068FF;
+    outline: none;
+}
+
+.emailWrong {
+    font-size: 13px;
+    font-weight: 400;
+    color: red;
+    margin-left: 80px;
+}
+
+.pw2Wrong {
+    font-size: 13px;
+    font-weight: 400;
+    color: red;
+    margin-left: 80px;
+}
+
+.phoneWrapper {
+    width: 450px;
+    height: 40px;
+    margin: 0px 82px 0px 78px;
+}
+
+.phone {
+    width: 95px;
+    height: 40px;
+    border-radius: 7px;
+    border: 1px solid #D2D2D2;
+    font-size: 16px;
+    padding-left: 18px;
+}
+
+.phone:focus {
+    border-color: #0068FF;
+    outline: none;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.tokenWrapper {
+    width: 211px;
+    height: 40px;
+    margin: 20px 82px 0px 264px;
+    display: flex;
+}
+.token {
+    width: 60px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #797979;
+    margin-right: 21px;
+
+}
+
+.sendButton {
+    width: 130px;
+    height: 40px;
+    border-radius: 7px;
+    border: 1px solid #D2D2D2;
+    color: #0068FF;
+    background-color: white;
+    font-size: 16px;
+}
+
+.sendButton:disabled {
+    background-color: whitesmoke;
+    color: #D2D2D2;
+}
+
+.timerWrapper {
+    width: 211px;
+    height: 40px;
+    display: flex;
+    margin: 20px 82px 0px 285px;
+}
+
+.timer {
+    width: 60px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #797979;
+}
+
+.doneButton {
+    width: 130px;
+    height: 40px;
+    border-radius: 7px;
+    border: 1px solid #0068FF;
+    background-color: #0068FF;
+    color: white;
+    font-size: 16px;
+}
+
+.doneButton:disabled {
+    border-color: #D2D2D2;
+    background-color: whitesmoke;
+    color: #D2D2D2;
+}
+
+.doneButton.done {
+    border-color: #D2D2D2;
+    background-color: #D2D2D2;
+    color: white;
+}
+
+.region {
+    width: 398px;
+    height: 60px;
+    border: 1px solid #D2D2D2;
+    border-radius: 7px;
+    appearance: none;
+    background: url('./Polygon\ 1.png') no-repeat right 23px center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #797979;
+    padding-left: 14px;
+    margin: 20px 82px 0px 78px;
+}
+
+.region:focus {
+    border-color: #0068FF;
+    outline: none;
+}
+
+.genderRadio {
+    width: 200px;
+    display: flex;
+    margin: 30px 200px 0px 200px;
+
+}
+
+label {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23px;
+    margin-right: 30px;
+}
+
+[type="radio"], span{
+    vertical-align: middle;
+}
+
+[type="radio"] {
+    vertical-align: middle;
+    appearance: none;
+    border: 1px solid #D2D2D2;
+    border-radius: 50%;
+    background-color: #ebebeb;
+    width: 20px;
+    height: 20px;
+    transition: border 0.5s ease-in-out;
+}
+
+[type="radio"]:checked {
+    border: 6px solid #0068FF;
+}
+
+[type="radio"]:hover {
+    box-shadow: 0 0 0 max(4px, 0.2em) lightgray;
+    cursor: pointer;
+  }
+  
+[type="radio"]:hover + span {
+    cursor: pointer;
+  }
+
+hr {
+    width: 398px;
+    margin: 30px 82px 0px 78px;
+
+}
+
+.joinButton {
+    width: 398px;
+    height: 75px;
+    border-radius: 10px;
+    border: 2px solid #0068FF;
+    background-color: white;
+    color: #0068FF;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 20px 82px 53px 78px;
+}
+
+.joinButton:disabled {
+    border-color: #D2D2D2;
+    background-color: whitesmoke;
+    color: #D2D2D2;
+}
+

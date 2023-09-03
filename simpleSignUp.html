@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+    <link href="./simpleSignUp.css" rel="stylesheet" />
+    <script src="./simpleSignUp.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h3>🐥회원가입</h3>
+      <input
+        id="email"
+        class="inputBox"
+        type="text"
+        placeholder="이메일을 입력해 주세요."
+        oninput="checkEmail()"
+      />
+      <div id="emailWrong" class="emailWrong"></div>
+      <input
+        id="user"
+        class="inputBox"
+        type="text"
+        placeholder="이름을 입력해 주세요."
+        maxlength="20"
+      />
+      <input
+        id="pw1"
+        class="inputBox"
+        type="text"
+        placeholder="비밀번호를 입력해 주세요."
+        oninput="checkPw1()"
+      />
+      <input
+        id="pw2"
+        class="inputBox"
+        type="text"
+        placeholder="비밀번호를 다시 입력해 주세요."
+        oninput="checkPw2()"
+      />
+      <div id="pw2Wrong" class="pw2Wrong"></div>
+
+      <div class="phoneWrapper">
+        <input
+          type="number"
+          id="phone1"
+          class="phone"
+          maxlength="3"
+          oninput="changeFocus1()"
+        />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="13"
+          height="2"
+          viewBox="0 0 13 2"
+          fill="none"
+        >
+          <path d="M1 1H12" stroke="black" stroke-linecap="round" />
+        </svg>
+        <input
+          type="number"
+          id="phone2"
+          class="phone"
+          maxlength="4"
+          oninput="changeFocus2()"
+        />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="13"
+          height="2"
+          viewBox="0 0 13 2"
+          fill="none"
+        >
+          <path d="M1 1H12" stroke="black" stroke-linecap="round" />
+        </svg>
+        <input
+          type="number"
+          id="phone3"
+          class="phone"
+          maxlength="4"
+          oninput="changeFocus3()"
+        />
+      </div>
+
+      <div class="tokenWrapper">
+        <div id="token" class="token">000000</div>
+        <button
+          id="sendButton"
+          class="sendButton"
+          onclick="sendNumber(); checkNumber(); checkTimer();"
+        >
+          인증번호 전송
+        </button>
+      </div>
+      <div class="timerWrapper">
+        <div id="timer" class="timer">3:00</div>
+        <button id="doneButton" class="doneButton" onclick="doneNumber()">
+          인증 완료
+        </button>
+      </div>
+      <select id="region" class="region" onchange="checkRegion()">
+        <option disabled="true" selected="true">지역을 선택하세요</option>
+        <option class="r">서울</option>
+        <option class="r">경기</option>
+        <option class="r">인천</option>
+      </select>
+      <div class="genderRadio">
+        <label>
+          <input type="radio" name="gender" onclick="checkGender()" />
+          <span>여성</span>
+        </label>
+        <label>
+          <input type="radio" name="gender" onclick="checkGender()" />
+          <span>남성</span>
+        </label>
+      </div>
+      <hr />
+      <button id="joinButton" class="joinButton" onclick="clickJoin()">
+        가입하기
+      </button>
+    </div>
+  </body>
+</html>
